@@ -53,7 +53,7 @@ const Landing = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Plane className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold text-foreground">AeroSafe AI</span>
+            <span className="text-2xl font-bold text-foreground">S.H.I.E.L.D</span>
           </div>
           <div className="flex items-center space-x-4">
             <Button variant="ghost" onClick={() => navigate("/login")}>
@@ -209,10 +209,10 @@ const Landing = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Plane className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold text-foreground">AeroSafe AI</span>
+              <span className="text-xl font-bold text-foreground">S.H.I.E.L.D</span>
             </div>
             <div className="text-muted-foreground text-center md:text-right">
-              <p>© 2024 AeroSafe AI. Advancing aviation safety through AI.</p>
+              <p>© 2024 S.H.I.E.L.D. Strategic Hazard Intelligence Expert Learning Defense.</p>
               <p className="text-sm mt-1">Built for Aviation Safety Hackathon</p>
             </div>
           </div>

@@ -18,6 +18,7 @@ import {
   AlertCircle,
   Star
 } from "lucide-react";
+import ChatBot from "./ChatBot";
 
 const TravellerDashboard = () => {
   const navigate = useNavigate();
@@ -96,7 +97,7 @@ const TravellerDashboard = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Plane className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold text-foreground">AeroSafe AI</span>
+            <span className="text-xl font-bold text-foreground">S.H.I.E.L.D</span>
             <Badge variant="secondary">Traveller Portal</Badge>
           </div>
           <div className="flex items-center space-x-4">
@@ -360,6 +361,19 @@ const TravellerDashboard = () => {
           </TabsContent>
         </Tabs>
       </div>
+
+      {/* V.I.M.A.N Chatbot */}
+      <ChatBot
+        botName="V.I.M.A.N"
+        botInitials="VM"
+        features={[
+          "Flight Schedule",
+          "Live Tracking", 
+          "Personal Details",
+          "Rules and Regulations",
+          "Feedback"
+        ]}
+      />
     </div>
   );
 };

@@ -98,7 +98,7 @@ const Login = () => {
           
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Plane className="h-8 w-8 text-primary" />
-            <span className="text-3xl font-bold text-foreground">AeroSafe AI</span>
+            <span className="text-3xl font-bold text-foreground">S.H.I.E.L.D</span>
           </div>
           <h1 className="text-4xl font-bold text-foreground mb-2">
             Access Your Dashboard
@@ -150,7 +150,7 @@ const Login = () => {
               Use any email and password to access the demo dashboards
             </p>
             <div className="flex justify-center space-x-4 text-xs text-muted-foreground">
-              <span>Email: demo@aerosafe.ai</span>
+              <span>Email: demo@shield.ai</span>
               <span>Password: demo123</span>
             </div>
           </CardContent>

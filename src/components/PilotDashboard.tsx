@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
 import { useNavigate } from "react-router-dom";
+import { useToast } from "@/hooks/use-toast";
 import { 
   Plane, 
   Brain, 
@@ -23,6 +24,7 @@ import {
   Clock,
   Zap
 } from "lucide-react";
+import ChatBot from "./ChatBot";
 
 const PilotDashboard = () => {
   const navigate = useNavigate();
@@ -145,7 +147,7 @@ const PilotDashboard = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Plane className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold text-foreground">AeroSafe AI</span>
+            <span className="text-xl font-bold text-foreground">S.H.I.E.L.D</span>
             <Badge variant="secondary" className="bg-accent">Pilot Portal</Badge>
           </div>
           <div className="flex items-center space-x-4">
@@ -596,6 +598,24 @@ const PilotDashboard = () => {
           </TabsContent>
         </Tabs>
       </div>
+
+      {/* F.A.L.C.O.N Chatbot */}
+      <ChatBot
+        botName="F.A.L.C.O.N"
+        botInitials="FC"
+        features={[
+          "Behavior Analysis",
+          "Cockpit Voice Decoder",
+          "Aircraft Maintenance Report",
+          "Live Tracking",
+          "Monitor Ongoing Flights",
+          "Damage Predictor",
+          "Causes",
+          "Safety Recommendations",
+          "Dashboard",
+          "Risk Predictor"
+        ]}
+      />
     </div>
   );
 };
